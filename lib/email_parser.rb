@@ -3,14 +3,13 @@ class EmailParser
 
   def initialize(email)
    @emails = email
- end
-end
+  end
+ 
   def parse
    emails.delete(',').split.uniq
- end
-
-  end 
-
+  end
+end 
+end
 
 email_addresses = "john@doe.com, person@somewhere.org"
 parser = EmailAddressParser.new(email_addresses)
