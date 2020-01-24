@@ -4,7 +4,7 @@ class EmailParser
   def initialize(email)
    @emails = email
  end
-
+end
   def parse
    emails.delete(',').split.uniq
  end
