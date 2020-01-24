@@ -9,7 +9,7 @@ class EmailParser
    emails.delete(',').split.uniq
   end
 end 
-end
+
 
 email_addresses = "john@doe.com, person@somewhere.org"
 parser = EmailAddressParser.new(email_addresses)
